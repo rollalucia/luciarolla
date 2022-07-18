@@ -1,4 +1,69 @@
+.mb-4 {
+    margin-bottom: 0 !important;
+}
 
-.navbar-logo{
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.navbar-logo {
     width: 100px;
+}
+
+/* color nav rgba(33, 37, 41) */
+
+.main-inicio {
+    /* background-image: url(../media/img/foto-main.jpg); */
+    background-color: #222;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+}
+
+.texto-main-inicio {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    padding: 0.5rem 0.5rem 1.5rem;
+}
+
+.texto1-main-inicio {
+    font-size: 1.4rem;
+}
+
+.texto2-main-inicio {
+    display: inline-block;
+    font-size: 2.5rem;
+    padding: 0.1rem 0;
+    font-weight: 600;
+}
+
+.texto3-main-inicio {
+    font-size: 1.4rem;
+}
+
+.sobre-mi {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.texto-sobre-mi {
+    font-family: 'Raleway', sans-serif;
+}
+.texto-sobre-mi h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.nombre, .edad, .github {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.5rem;
 }
