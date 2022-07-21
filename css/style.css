@@ -171,7 +171,7 @@ footer {
 .main-comentarios {
     height: 100vh;
     background-color: rgb(255, 243, 251);
-    padding: 1rem;
+    padding: 3rem 1rem;
 }
 
 .texto-comentarios {
@@ -267,5 +267,10 @@ footer {
         flex-direction: row;
         justify-content: center;
         gap: 5rem;
+    }
+
+    .cuestionario-comentarios {
+        margin: 4rem auto;
+      
     }
 }
