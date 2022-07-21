@@ -255,4 +255,17 @@ footer {
     figcaption {
         font-size: 1.3rem;
     }
+
+   .main-contacto {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+    .redes-contacto {
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+    }
 }
