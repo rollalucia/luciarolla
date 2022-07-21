@@ -1,3 +1,6 @@
+
+/* Aplicación de estilos pensada mobile first  */
+
 .mb-4 {
     margin-bottom: 0 !important;
 }
@@ -18,10 +21,7 @@ img {
 /* color nav rgba(33, 37, 41) */
 
 .main-inicio {
-    /* background-image: url(../media/img/foto-main.jpg); */
     background-color: #222;
-    background-size: cover;
-    background-repeat: no-repeat;
     min-height: 300px;
 }
 
@@ -31,6 +31,9 @@ img {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     padding: 0.5rem 0.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .texto1-main-inicio {
@@ -50,29 +53,30 @@ img {
 
 .sobre-mi {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 3rem 0;
     background-color: rgb(226, 221, 221);
+    align-items: center;
 }
 .texto-sobre-mi {
     font-family: 'Raleway', sans-serif;
     padding-bottom: 1rem;
-}
-.texto-sobre-mi h3 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-    padding-bottom: 1rem;
-}
-.texto-sobre-mi p, a{
     font-size: 1.3rem;
 }
+.sobre-mi h3 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    
+}
+
 
 .nombre, .edad, .github {
     display: flex;
     flex-direction: row;
     gap: 0.4rem;
-    font-size: 1.5rem;
     margin-left: 1.3rem;
 }
 .nombre p, 
@@ -100,7 +104,7 @@ img {
 .contenido-mis-cursos {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .img-mis-cursos {
@@ -115,14 +119,14 @@ figure {
 }
 .mis-cursos h3 {
     align-self: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 600;
     padding-bottom: 1rem;
 }
 .texto-mis-cursos {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-align: center;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
 }
 footer p {
     margin: 0;
@@ -143,7 +147,7 @@ footer {
 }
 
 .texto-contacto {
-    font-size: 5vh;
+    font-size: 2.5rem;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     padding: 1.75rem 0;
@@ -172,7 +176,7 @@ footer {
 
 .texto-comentarios {
     font-family:  'Raleway', sans-serif;
-    font-size: 3vh;
+    font-size: 1.6rem;
     text-align: center;
 }
 
@@ -194,4 +198,61 @@ footer {
 
 .entradas-comentarios {
     width: 100%;
+}
+
+
+@media (min-width: 415px) {
+    .main-inicio {
+        display: flex;
+        
+    }
+    .texto-main-inicio {
+        flex: 3;
+    }
+    .texto1-main-inicio {
+       font-size: 2rem;
+    }
+
+    .texto2-main-inicio {
+        font-size: 3rem;
+    }
+    .texto3-main-inicio {
+        font-size: 2rem;
+    }
+    .img-main-inicio {
+       width: 30%;
+    }
+    .card-sobre-mi {
+        display: flex;
+        width: 80%;
+        justify-content: space-evenly;
+    }
+.sobre-mi h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+    .texto-sobre-mi {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nombre, .edad, .github {
+        padding: 0.5rem 0;
+    }
+    .texto-mis-cursos {
+        font-size: 2rem;
+        max-width: 720px;
+        margin: auto;
+    }
+    .mis-cursos img {
+        width: 120px;
+    }
+    .img-mis-cursos {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    figcaption {
+        font-size: 1.3rem;
+    }
 }
